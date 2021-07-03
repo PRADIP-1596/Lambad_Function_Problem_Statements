@@ -19,7 +19,7 @@ interface FirstName {
 }
 
 
-public class FirstnameValidate {
+public class UserRegistration {
   public static void main(String[] args ){
       //Lambda -> operator uses
       FirstName fName = () -> {
