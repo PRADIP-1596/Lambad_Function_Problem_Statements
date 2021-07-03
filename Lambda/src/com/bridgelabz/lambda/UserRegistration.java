@@ -1,13 +1,4 @@
 
-/**
-* Purpose : User Registration
-*           User will input firstName
-*           Validate the user inputs using regex Lambda Function.
-*           If matches, return valid else not valid
-*
-* @author : Aniket Raikwar
-* @since : 02.07.2021
-*/
 package com.bridgelabz.lambda;
 import java.util.Scanner;
 import java.util.regex.Matcher;
