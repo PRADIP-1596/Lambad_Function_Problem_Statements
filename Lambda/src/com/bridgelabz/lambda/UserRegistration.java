@@ -6,9 +6,8 @@ import java.util.regex.Pattern;
 
 @FunctionalInterface
 interface User{
-    void emailValidate();
+    void mobileValidate();
 }
-
 
 public class UserRegistration {
     public static void main(String[] args ){
@@ -16,20 +15,20 @@ public class UserRegistration {
         User user = () -> {
             Scanner sc = new Scanner(System.in);
 
-            String regex = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+            String regex = "^(91){1}[0-9]{9}$";
 
-            System.out.println("Enter your Email id");
+            System.out.println("Enter your Mobile number");
             String email = sc.next();
 
             Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(email);
             if(matcher.matches()){
-                System.out.println("Given email id is valid");
+                System.out.println("Given mobile number is valid");
             }else{
-                System.out.println("Given email id is not valid");
+                System.out.println("Given mobile number. is not valid");
             }
         };
-        user.emailValidate();
+        user.mobileValidate();
 
     }
 }
